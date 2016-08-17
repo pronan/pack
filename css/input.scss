@@ -1,0 +1,51 @@
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=date],
+input[type=month],
+input[type=time],
+input[type=datetime],
+input[type=datetime-local],
+input[type=week],
+input[type=number],
+input[type=search],
+input[type=tel],
+input[type=color],
+select,
+textarea {  
+    padding: .5em .6em;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width:100%;
+}
+
+input[type=submit],
+input[type=button] {
+    color: #fff;
+    display: inline-block;
+    width:100%;
+    zoom: 1;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: inherit;
+    padding: 0.5em 1em;
+    border: 0px solid $MAIN_COLOR;  /*IE 6/7/8*/
+    background-color: $MAIN_COLOR;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+input[type=submit]:hover,
+input[type=button]:hover{
+  background-color: $BUTTON_HOVER_COLOR;
+} 

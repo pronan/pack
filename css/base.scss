@@ -1,0 +1,49 @@
+*, *:before, *:after{
+  margin: 0;
+  padding: 0;
+  -ms-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box; 
+  box-sizing:border-box;
+}
+pre {
+ white-space: pre-wrap;    /* css-3 */
+ white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+ white-space: -pre-wrap;   /* Opera 4-6 */
+ white-space: -o-pre-wrap;  /* Opera 7 */
+ word-wrap: break-word;    /* Internet Explorer 5.5+ */
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    &:hover{
+      background: $LINK_HOVER_COLOR;
+      color:white;
+    }
+}
+
+table{
+  border-spacing: 0;
+  border-collapse: collapse;
+  border:1px solid #ccc;
+}
+tr:hover {
+  background: $TABLE_HOVER_COLOR;
+}
+th,td {
+  padding: .5em 1em;
+  border-left:1px solid #ccc;
+}
+ol li{
+  margin: 5px 15px 5px 15px;
+}
+
+form li, form ul {
+  display: inline-block;
+  vertical-align: middle;
+}

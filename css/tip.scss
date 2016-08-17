@@ -1,0 +1,36 @@
+@mixin base($color) {
+  z-index: 1;
+  color: #fff;
+  text-align: left;
+  border-radius: 4px;
+  position:relative;  /*js will change it to absolute*/
+  line-height:1.3em;
+  background-color: $color;
+
+  li {
+    display: block;
+    word-wrap: break-word;
+    word-break: break-all;
+    padding: 6px 10px;
+    max-width: 24em;
+  }
+
+  &:before{
+    content: "";
+    position: absolute;
+    width:0;
+    left: -7px;
+    border-top: 14px solid transparent; /*14px comes from the half of the height of the input widget*/
+    border-bottom: 14px solid transparent;
+    border-right: 14px solid $color;
+  }
+}
+
+.errorlist{
+  @include base($ERROR_COLOR);
+}
+
+.hintlist{
+  @include base($HINT_COLOR);
+}
+

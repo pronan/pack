@@ -1,0 +1,85 @@
+.zkz {
+  margin: auto;
+  width: 820px;
+  .title {
+    font-family: Heiti;
+    font-weight: bold;
+  }
+  .up, .down{
+    border:2px solid #ccc;
+    min-height: 400px;
+  }
+  .single {
+    font-size: 350%;
+    line-height: 150%;
+  }
+  .zhang {
+    position: relative;
+    width:151px;
+    margin:auto;
+    img {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+    }
+  }
+  th{
+    border: 1px solid #ccc;
+  }
+  table {
+    width:100%;
+  }
+  li{
+    font-size: 80%;
+    font-family:Yahei;
+    text-align: justify;
+  }
+}
+.center {
+  text-align: center;
+  margin:10px 0;
+}
+
+
+.zkz-base-info {
+  .label, .info{
+    display: inline-block;
+    padding: 5px 10px;
+    .label{
+      /*text-align: right;*/
+      width:9em;
+      font-weight: bold;
+    }
+  }
+}
+
+.zkz-menu {
+  font-size: 85%;
+  float: left;
+  .time{
+    width:22em;
+  }
+  .address{
+    width:22em;
+  }
+}
+
+
+.zkz-org {
+  font-size: 250%;
+}
+
+.zkz-rules {
+
+}
+
+.zkz-title{
+  font-size: 150%;
+}
+.zkz-footer {
+  font-size: 120%;
+}
+.enter{
+  margin:auto;
+}

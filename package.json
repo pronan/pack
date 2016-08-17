@@ -1,0 +1,26 @@
+{
+  "name": "pack",
+  "version": "1.0.0",
+  "description": "my frontend project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/pronan/pack.git"
+  },
+  "author": "xiang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pronan/pack/issues"
+  },
+  "homepage": "https://github.com/pronan/pack#readme",
+  "devDependencies": {
+    "css-loader": "^0.23.1",
+    "node-sass": "^3.8.0",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1"
+  }
+}

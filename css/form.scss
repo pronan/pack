@@ -1,0 +1,16 @@
+.simple-form{
+  input, select, textarea{
+    padding: .5em .6em;
+  }
+  label{
+    display: inline-block;
+    padding:5px 0 2px 0;
+  }
+  li, ul{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  p{
+    margin:10px 0;
+  }
+}

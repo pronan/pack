@@ -1,0 +1,32 @@
+@mixin base($height:$NAVBAR_HEIGHT, $color:$NAVBAR_HOVER_COLOR, $display:inline-block) {
+	li{
+		height:$height;
+		display:$display;
+	}
+	a {
+		display:$display;
+		line-height:$height;
+		height:$height;
+		padding: 0 1em;
+		min-width: 4em;
+		color:white;
+		&:hover{
+			height:$height;
+			background: $color;
+		}
+	}
+
+}
+
+.navbar{
+	@include base();
+	.youarehere{
+			background: $NAVBAR_HOVER_COLOR;
+		}
+}
+.navbar-v{
+	@include base($color:$SIDEBAR_HOVER_COLOR, $display:block);
+	.youarehere{
+		background: $SIDEBAR_HOVER_COLOR;
+	}
+}
