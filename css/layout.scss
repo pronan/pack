@@ -11,6 +11,12 @@
 @mixin inner {
 
 }
+
+.container {
+  margin:auto;
+  width:90%;
+  max-width:1400px;
+}
 form {
   .form-row{
     margin-bottom:10px;

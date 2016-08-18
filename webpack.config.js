@@ -1,8 +1,8 @@
 module.exports = {
     entry: "./index.js",
     output: {
-        path: __dirname,
-        filename: "main.[hash].js"
+        path: '../wdksw/static/js',
+        filename: "bundle.js"
     },
     module: {
         loaders: [
