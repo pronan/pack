@@ -4,10 +4,10 @@ module.exports = {
         path: '../wdksw/static/js',
         filename: "bundle.js", 
         libraryTarget: "var",
-        library: "Foo", 
+        library: "lib", 
     },
     externals: {
-        "jquery": "jQuery", 
+        //"jquery": "jQuery", 
     }, 
     module: {
         loaders: [
