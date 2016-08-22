@@ -2717,4 +2717,4 @@ var Collection = function() {
 
 window.plupload = plupload;
 
-}(window, mOxie));
+}(window, true));

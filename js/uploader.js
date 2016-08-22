@@ -5,7 +5,7 @@ var enc_base64 = require("crypto-js/enc-base64")
 // import enc_base64 from "crypto-js/enc-base64"
 // import hmac_sha1  from "crypto-js/hmac-sha1"
 require("./qiniu") //QiniuJsSDK and Qiniu available
-require("./plupload") // plupload available
+// require("./plupload") // plupload available
 
 function utf16to8(str) {
   var out, i, len, c;

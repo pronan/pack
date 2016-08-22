@@ -2,7 +2,7 @@ module.exports = {
     entry: "./index.js",
     output: {
         path: '../wdksw/static/js',
-        publicPath: 'static/js/', 
+        publicPath: '/static/js/', 
         filename: "bundle.js", 
         // libraryTarget: "var",
         // library: "lib", 
