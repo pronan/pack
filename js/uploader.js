@@ -1,6 +1,9 @@
-var hmac_sha1 = require("crypto-js/hmac-sha1") 
-var enc_base64 = require("crypto-js/enc-base64")
-
+// var hmac_sha1 = require("crypto-js/hmac-sha1") 
+// var enc_base64 = require("crypto-js/enc-base64")
+// import utf16 from "crypto-js/enc-utf16"
+// import utf8 from "crypto-js/enc-utf8"
+import enc_base64 from "crypto-js/enc-base64"
+import hmac_sha1  from "crypto-js/hmac-sha1"
 function utf16to8(str) {
   var out, i, len, c;
   out = "";
