@@ -1,1 +1,1 @@
-﻿square = (x) -> x * x
+﻿[console.log a*2 for a in [1,2,3]]
