@@ -4,6 +4,7 @@
 
 require("./css/main.scss")
 require("./test.coffee")
+
 window.$ = window.jQuery = require("jquery")
 
 if (window.location.pathname=='/login') {
