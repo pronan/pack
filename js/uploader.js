@@ -2,8 +2,12 @@ var hmac_sha1 = require("crypto-js/hmac-sha1")
 var enc_base64 = require("crypto-js/enc-base64")
 // var plupload = require("plupload")
 // var QiniuJsSDK = require("qiniu")
-require("./plupload")
+require("./plupload");
+var plupload = window.plupload
 require("./qiniu")
+var QiniuJsSDK = window.QiniuJsSDK
+
+console.log(plupload, QiniuJsSDK)
 
 function safe64(str){
   return str.replace(/\+/g, "-").replace(/\//g, "_");
