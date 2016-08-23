@@ -13,7 +13,6 @@
 /*global ActiveXObject */
 /*exported Qiniu */
 /*exported QiniuJsSDK */
-require("./plupload");
 
 ; (function (global) {
 

@@ -10674,7 +10674,7 @@
     });
 
     expose(["moxie/core/utils/Basic", "moxie/core/I18n", "moxie/core/utils/Mime", "moxie/core/utils/Env", "moxie/core/utils/Dom", "moxie/core/Exceptions", "moxie/core/EventTarget", "moxie/core/utils/Encode", "moxie/runtime/Runtime", "moxie/runtime/RuntimeClient", "moxie/file/Blob", "moxie/file/File", "moxie/file/FileInput", "moxie/file/FileDrop", "moxie/runtime/RuntimeTarget", "moxie/file/FileReader", "moxie/core/utils/Url", "moxie/file/FileReaderSync", "moxie/xhr/FormData", "moxie/xhr/XMLHttpRequest", "moxie/runtime/Transporter", "moxie/image/Image", "moxie/core/utils/Events"]);
-})(window);/**
+})(this);/**
  * o.js
  *
  * Copyright 2013, Moxiecode Systems AB
@@ -10723,4 +10723,4 @@ Globally exposed namespace with the most frequently used public classes and hand
         exports.o = o;
     }
     return o;
-})(window);
+})(this);
