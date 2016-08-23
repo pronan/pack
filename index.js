@@ -6,6 +6,6 @@ window.$ = window.jQuery =  require("jquery")
 
 if (window.location.pathname=='/user/update') {
     require.ensure(["./js/uploader"], function(require) {
-        window.make_uploader = require("./js/uploader")
+        require("./js/uploader")()   
     });
 }

@@ -28,6 +28,5 @@
     "webpack": "^1.13.1"
   },
   "dependencies": {
-    "babel-runtime": "^6.11.6"
   }
 }

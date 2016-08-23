@@ -1,13 +1,7 @@
 var hmac_sha1 = require("crypto-js/hmac-sha1") 
 var enc_base64 = require("crypto-js/enc-base64")
-// var plupload = require("plupload")
-// var QiniuJsSDK = require("qiniu")
-require("./plupload");
-var plupload = window.plupload
-require("./qiniu")
-var QiniuJsSDK = window.QiniuJsSDK
-
-console.log(plupload, QiniuJsSDK)
+var plupload = require("plupload")
+var QiniuJsSDK = require("qiniu")
 
 function safe64(str){
   return str.replace(/\+/g, "-").replace(/\//g, "_");
@@ -28,12 +22,12 @@ function make_uploader(opts){
   var deadline = Math.floor((new Date()).getTime()/1000)+ (opts.expires || 3600)
   var ak = opts.ak || '0maLJRi-p7lBucMKdgyLWGEdPpGlRQUTeW-bbL4l'
   var sk = opts.sk || 'vywueA_FOc7gWWYprL8t0aBSD0b24TKbILIVmYOP'
-  var avatar_input_id = opts.avatar_id || '#id-avatar'
+  var avatar_input_id = opts.avatar_input_id || 'id-avatar'
   var browse_button = opts.browse_button || 'id-avatar-qiniu'
   var scope = opts.scope || 'files'
   return (new QiniuJsSDK()).uploader({
     runtimes: opts.runtimes || 'html5,flash,html4',      
-    container: opts.container || 'qiniu-form',
+    container: opts.container || 'id-qiniu-form',
     browse_button: browse_button, 
     domain: opts.domain || 'files.httper.cn', 
     uptoken : get_uptoken(ak, sk, {scope:scope, deadline :deadline}), 
@@ -60,9 +54,9 @@ function make_uploader(opts){
                var domain = up.getOption('domain');
                var res = JSON.parse(info);
                var uri = domain +'/'+ res.key; 
-               $(avatar_input_id).attr('value', "http://"+uri);
+               $('#'+avatar_input_id).attr('value', "http://"+uri);
                $('.qiniu_dynamic').remove();
-               $('<img class="qiniu_dynamic" src="http://'+uri+'"/>').insertBefore($(browse_button));
+               $('<img class="qiniu_dynamic" src="http://'+uri+'"/>').insertBefore($('#'+browse_button));
         },
         'Error': function(up, err, errTip) {
                console.log(JSON.stringify(err), errTip)

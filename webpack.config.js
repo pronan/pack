@@ -3,14 +3,14 @@ module.exports = {
     output: {
         path: '../wdksw/static/js',
         publicPath: '/static/js/', 
-        filename: "main.js", 
+        filename: "y.js", 
         // libraryTarget: "var",
         // library: "lib", 
     },
-    // externals: {
-    //     "qiniu": "QiniuJsSDK", 
-    //     "plupload":"plupload", 
-    // }, 
+    externals: {
+        "qiniu": "QiniuJsSDK", 
+        "plupload":"plupload", 
+    }, 
     module: {
         loaders: [
             //{ loader: 'babel', test: /\.js$/, exclude: /(node_modules|bower_components)/, query: { presets: ['es2015'], plugins: ['transform-runtime'], cacheDirectory: true}, }, 
