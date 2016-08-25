@@ -3,9 +3,9 @@ var webpack = require("webpack");
 module.exports = {
     entry: "./index.js",
     output: {
-        path: '../wdksw/static/js',
+        path: '../jarsj/static/js',
         publicPath: '/static/js/', 
-        filename: "abbb.js", 
+        filename: "a.js", 
         // libraryTarget: "var",
         // library: "lib", 
     },
