@@ -13,7 +13,9 @@
 /*global ActiveXObject */
 /*exported Qiniu */
 /*exported QiniuJsSDK */
-require("./plupload");
+
+var mOxie = require("./moxie");
+var plupload = require("./plupload");
 
 ; (function (global) {
 
@@ -1414,5 +1416,7 @@ require("./plupload");
     global.Qiniu = Qiniu;
 
     global.QiniuJsSDK = QiniuJsSDK;
-
+    
+    // expose to nodejs module
+    module.exports = QiniuJsSDK;
 })(window);

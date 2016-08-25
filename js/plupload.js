@@ -21,7 +21,7 @@
  */
 
 /*global mOxie:true */
-require("./moxie");
+var mOxie = require("./moxie");
 
 ; (function (window, o, undef) {
 
@@ -2312,5 +2312,6 @@ require("./moxie");
     };
 
     window.plupload = plupload;
-
+    // expose to nodejs module
+    module.exports = plupload;
 })(window, mOxie);

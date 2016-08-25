@@ -9,12 +9,11 @@ module.exports = {
         // libraryTarget: "var",
         // library: "lib", 
     },
-    // externals: {
-    //     "qiniu": "QiniuJsSDK", 
-    //     "plupload":"plupload", 
-    // }, 
+    externals: {
+        "jquery": "$", 
+    }, 
     plugins: [
-        new webpack.ProvidePlugin({$:'jquery', jQuery:'jquery'}), 
+        //new webpack.ProvidePlugin({$:'jquery', jQuery:'jquery'}), 
     ], 
     module: {
         loaders: [

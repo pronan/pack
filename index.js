@@ -1,42 +1,19 @@
 require("./css/main.scss")
-// var router = require("./js/router")
 
-// router({
-//     '^/login$':'./js/login_form', 
-//     '^/register$':'./test', 
-// })
+function regex(str) {
+    return new RegExp('^'+str+'$', 'g');
+}
+var uri = window.location.pathname;
 
-// var opts={
-//     '^/login$'   :'./js/login_form', 
-//     '^/register$':'./test', 
-// }
-// var p = window.location.pathname;
-// for (var regex in opts) {
-//     if (opts.hasOwnProperty(regex)) {
-//         if (p.match(new RegExp(regex, 'g'))) {
-//             var m = opts[regex];
-//             if (typeof m==='string'){
-//                 require.ensure([m], function(require) {
-//                     require(m);
-//                 });
-//             }else{
-//                 var path = m.path;
-//                 var callback = m.callback || function (m) {return m()};
-//                 require.ensure([path], function(require) {
-//                     callback(require(path));
-//                 });
-//             }
-//             break;
-//         }
-//     }
-// }
-
-var p = window.location.pathname;
-
-if (p.match(new RegExp('^/register$', 'g'))) {
-
-    require.ensure(['./test'], function(require) {
-        require('./test');
+if (regex('/register').test(uri)) {
+        require(['./test'], function(test) {
     });
-
+}else if(regex('/user/update').test(uri)) {
+    require(['./js/uploader'], function(uploader) {
+        uploader();
+    });
+}else if(regex('/login').test(uri)) {
+    require(['./test2'], function(m) {
+        m()
+    });
 }

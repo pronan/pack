@@ -10722,5 +10722,7 @@ Globally exposed namespace with the most frequently used public classes and hand
     if (!exports.o) {
         exports.o = o;
     }
+    // expose to nodejs module
+    module.exports = o;
     return o;
 })(window);

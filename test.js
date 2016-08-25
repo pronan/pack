@@ -1,1 +1,1 @@
-console.log('hello, router!')
+$('div').each(function(i, v){console.log(i)})
