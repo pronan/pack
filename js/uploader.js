@@ -8,7 +8,7 @@ function safe64(str){
   return str.replace(/\+/g, "-").replace(/\//g, "_");
 }
 function base64encode(str) {
-  return (new Buffer(str)).toString('base64');
+  return new Buffer(str).toString('base64');
 };
 
 function get_uptoken(access_key, secret_key, putPolicy) {
