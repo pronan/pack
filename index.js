@@ -1,4 +1,5 @@
 require("./css/main.scss")
+global.$ = global.jQuery = require('jquery')
 
 function regex(str) {
     return new RegExp('^'+str+'$', 'g');

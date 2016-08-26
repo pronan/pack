@@ -63,7 +63,6 @@ function make_uploader(opts){
              var domain = up.getOption('domain');
              var res = JSON.parse(info);
              var uri = domain +'/'+ res.key; 
-             console.log('ok:', uri);
              $('#'+avatar_input_id).attr('value', "http://"+uri);
              $('.qiniu_dynamic').remove();
              $('<img class="qiniu_dynamic" src="http://'+uri+'"/>').insertBefore($('#'+browse_button));

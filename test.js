@@ -1,1 +1,0 @@
-$('div').each(function(i, v){console.log(i)})

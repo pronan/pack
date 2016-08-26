@@ -3,14 +3,14 @@ var webpack = require("webpack");
 module.exports = {
     entry: "./index.js",
     output: {
-        path: '../wdksw/static/js',
+        path      : '../wdksw/static/js',
         publicPath: '/static/js/', 
-        filename: "a.js", 
+        filename  : "a.js", 
         // libraryTarget: "var",
         // library: "lib", 
     },
     externals: {
-        "jquery": "$", 
+        //"jquery": "$", 
     }, 
     plugins: [
         //new webpack.ProvidePlugin({$:'jquery', jQuery:'jquery'}), 
