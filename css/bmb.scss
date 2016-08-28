@@ -1,0 +1,51 @@
+.detail-table {
+  margin: auto;
+  font-size:100%;
+}
+
+.detail-table td {
+  border:1px solid #000;
+  padding: 3px;
+}
+
+.detail-table div,
+.detail-table pre {
+  width: 5em;
+  display: block;
+  word-wrap:break-word;
+
+}
+
+.detail-table pre {
+
+}
+
+.table-input{
+  width:100%;
+  th, td{
+    border:1px solid #ccc;
+    font-weight:normal;
+  }
+  td{
+    padding:0;
+    input {
+      border:0;
+      border-radius:0;
+    }
+  }
+}
+
+.table-input{
+  width:100%;
+  th, td{
+    border:1px solid #ccc;
+    font-weight:normal;
+  }
+  td{
+    padding:0;
+    input {
+      border:0;
+      border-radius:0;
+    }
+  }
+}

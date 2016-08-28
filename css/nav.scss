@@ -23,6 +23,15 @@
 	.youarehere{
 			background: $NAVBAR_HOVER_COLOR;
 		}
+  img{
+    display:inline-block;
+    height:$NAVBAR_HEIGHT;
+    //vertical-align: bottom;
+    float: left;
+  }
+}
+ul.navbar{
+	height:$NAVBAR_HEIGHT;
 }
 .navbar-v{
 	@include base($color:$SIDEBAR_HOVER_COLOR, $display:block);
