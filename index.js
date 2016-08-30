@@ -13,8 +13,8 @@ if (regex('/register').test(uri)) {
     require(['./js/uploader'], function(uploader) {
         uploader();
     });
-}else if(regex('/login').test(uri)) {
-    require(['./test2'], function(m) {
-        m()
+}else if(regex('/login1').test(uri)) {
+    require(['./js/form'], function(m) {
+        $(document).ready(function() {m()})
     });
 }
