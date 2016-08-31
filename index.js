@@ -1,5 +1,5 @@
 require("./css/main.scss")
-global.$ = global.jQuery = require('jquery')
+$ = jQuery = require('jquery')
 
 function regex(str) {
     return new RegExp('^'+str+'$', 'g');
@@ -13,8 +13,10 @@ if (regex('/register').test(uri)) {
     require(['./js/uploader'], function(uploader) {
         uploader();
     });
-}else if(regex('/login1').test(uri)) {
-    require(['./js/form'], function(m) {
-        $(document).ready(function() {m()})
+}else if(regex('/login').test(uri)) {
+    require(['./js/form'], function(form) {
+        $(document).ready(function() {
+            form()
+        });
     });
 }

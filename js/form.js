@@ -1,4 +1,4 @@
-function main(argument) {
+function main() {
     $("form").submit(function(e) {
         var fm = $(this);
         var event = window.event || e;
@@ -26,15 +26,15 @@ function main(argument) {
                     var errors = res.errors;
                     $.each(errors, function(field, value) {
                         var e = $('#id_'+field);
-                        $(value).insertAfter(e);
+                        $('<div>'+value[0]+'</div>').insertAfter(e);
                     });
                 }
             },
             error: function(xhr, textStatus, errorThrown) {
-                alert(xhr, textStatus, errorThrown);
+                console.log(xhr, textStatus, errorThrown);
             },
         })
     });
 }
 
-exports = main
+module.exports = main
